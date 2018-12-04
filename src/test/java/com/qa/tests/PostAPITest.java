@@ -37,8 +37,6 @@ public class PostAPITest extends TestBase{
 		url = serviceUrl + apiUrl;
 		
 	}
-	
-	
 	@Test
 	public void postAPITest() throws JsonGenerationException, JsonMappingException, IOException{
 		restClient = new RestClient();
@@ -50,7 +48,7 @@ public class PostAPITest extends TestBase{
 		Users users = new Users("morpheus", "leader"); //expected users obejct
 		
 		//object to json file:
-		mapper.writeValue(new File("/Users/NaveenKhunteta/Documents/APIAutomationHTTPClient/APIAutomationUsingHTTPClient/src/main/java/com/qa/data/users.json"), users);
+		mapper.writeValue(new File("src\\main\\java\\com\\qa\\data\\users.json"), users);
 		
 		//java object to json in String:
 		String usersJsonString = mapper.writeValueAsString(users);
