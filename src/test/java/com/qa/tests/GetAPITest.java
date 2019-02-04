@@ -150,7 +150,7 @@ public class GetAPITest extends TestBase{
 		}	
 		System.out.println("Headers Array-->"+allHeaders);
 		
-		
+		System.out.println("Headers Array-->"+allHeaders);
 		
 	}
 	
